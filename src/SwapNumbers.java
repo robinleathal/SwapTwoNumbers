@@ -27,6 +27,12 @@ public class SwapNumbers {
 		
 	}
 	
+	public static void swapThreeNumbersWithoutTemp() {
+		num1 = (num2 + num3) - num3;
+		num2 = num3 + num2 - num1;
+		num3 = num1- num2;
+		
+	}
 
 	public static void main(String[] args) {
 		System.out.println("Before Swapping");
@@ -60,6 +66,16 @@ public class SwapNumbers {
 		System.out.println("num2 = "+ num2);
 		System.out.println("num3 = "+ num3);
 		
+		System.out.println("Before Swapping 3 numbers without Temp");
+		System.out.println("num1 = "+ num1);
+		System.out.println("num2 = "+ num2);
+		System.out.println("num3 = "+ num3);
+		
+		swapThreeNumbersWithoutTemp();
+		System.out.println("After Swapping 3 numbers without Temp");
+		System.out.println("num1 = "+ num1);
+		System.out.println("num2 = "+ num2);
+		System.out.println("num3 = "+ num3);
 
 	}
 
